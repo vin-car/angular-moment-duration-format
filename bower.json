@@ -14,7 +14,7 @@
   "homepage": "https://github.com/vin-car/angular-moment-duration-format",
   "repository": {
     "type": "git",
-    "url": "git://github.com/vvv/ccc.git"
+    "url": "git://github.com/vin-car/angular-moment-duration-format.git"
   },
   "dependencies": {
     "angular": ">=1.2.0 <1.7.0",
