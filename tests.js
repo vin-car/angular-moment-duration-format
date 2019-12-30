@@ -186,16 +186,16 @@ describe('module angularDurationFormat', function () {
 			expect(amdFormat(input, template).toString()).toMatch(/^01:30$/);
 		});
 
-		it('should print 3y 2mo 0w 2d 9h 46m 40s 13ms', function () {
+		it('should print 3y 2m 0w 2d 9h 46m 40s 13ms', function () {
 			var input = moment.duration({y:3, M:2, d:2, h: 9, m:46, s:40,  ms:13});
-			var template = 'y[y] M[mo] w[w] d[d] h[h] m[m] s[s] S[ms]';
-			expect(amdFormat(input, template).toString()).toMatch(/^3y 2mo 0w 2d 9h 46m 40s 13ms$/);
+			var template = 'y[y] M[m] w[w] d[d] h[h] m[m] s[s] S[ms]';
+			expect(amdFormat(input, template).toString()).toMatch(/^3y 2m 0w 2d 9h 46m 40s 13ms$/);
 		});
 
-		it('should print 31536000000 (1 year as seconds)', function () {
+		it('should print 31,536,000,000 (1 year as seconds)', function () {
 			var input = moment.duration(1, "years");
 			var template = 'S';
-			expect(amdFormat(input, template).toString()).toMatch(/^31536000000$/);
+			expect(amdFormat(input, template).toString()).toMatch(/^31,536,000,000$/);
 		});
 
 	});
