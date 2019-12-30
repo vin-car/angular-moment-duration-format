@@ -1,7 +1,3 @@
-/* License: MIT.
- * Copyright (C) 2013, 2014, 2015, Uri Shaked.
- */
-
 'use strict';
 
 module.exports = function (config) {
@@ -13,14 +9,14 @@ module.exports = function (config) {
 		autoWatch: true,
 		reporters: ['dots', 'coverage'],
 		files: [
-			'bower_components/angular/angular.js',
-			'bower_components/moment/moment.js',
-			'bower_components/moment-duration-format/lib/moment-duration-format.js',
+			'node_modules/angular/angular.js',
+			'node_modules/moment/moment.js',
+			'node_modules/moment-duration-format/lib/moment-duration-format.js',
 			'angular-moment-duration-format.js',
 
 			// angular-mocks defines a global variable named 'module' which confuses moment-timezone.js.
 			// Therefore, it must be included after moment-timezone.js.
-			'bower_components/angular-mocks/angular-mocks.js',
+			'node_modules/angular-mocks/angular-mocks.js',
 
 			'tests.js'
 		],
@@ -30,6 +26,7 @@ module.exports = function (config) {
 		coverageReporter: {
 			type: 'lcov',
 			dir: 'coverage/'
-		}
+		},
+		singleRun: true
 	});
 };

@@ -16,10 +16,6 @@ Node.js
 
 `npm install angular-moment-duration-format`
 
-Bower
-
-`bower install angular-moment-duration-format`
-
 Browser
 
 ```html
