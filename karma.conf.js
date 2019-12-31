@@ -5,7 +5,7 @@ module.exports = function (config) {
 		basePath: '',
 		frameworks: ['jasmine'],
 		logLevel: config.LOG_INFO,
-		browsers: ['PhantomJS'],
+		browsers: ['ChromeHeadless'],
 		autoWatch: true,
 		reporters: ['dots', 'coverage'],
 		files: [

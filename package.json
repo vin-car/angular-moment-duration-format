@@ -26,17 +26,16 @@
   "devDependencies": {
     "angular": "^1.7.9",
     "angular-mocks": "^1.7.9",
-    "coveralls": "2.11.9",
+    "coveralls": "^3.0.9",
     "jasmine-core": "2.4.1",
     "jshint": "^2.11.0-rc1",
     "jshint-stylish": "^2.0.0",
-    "karma": "0.13.22",
-    "karma-coverage": "0.5.5",
+    "karma": "^4.4.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.1",
     "karma-jasmine": "0.3.8",
-    "karma-phantomjs-launcher": "1.0.0",
     "moment": "^2.24.0",
     "moment-duration-format": "^2.3.2",
-    "phantomjs-prebuilt": "2.1.7",
     "uglify-js": "^3.7.3"
   }
 }
