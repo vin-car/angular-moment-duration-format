@@ -1,6 +1,6 @@
 {
   "name": "angular-moment-duration-format",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Fiters for use and format Moment.js duration in AngularJS views",
   "author": "Vincenzo Carrese",
   "repository": {
@@ -14,9 +14,10 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "uglifyjs angular-moment-duration-format.js -m --source-map -o angular-moment-duration-format.min.js",
-    "lint": "jshint angular-moment-duration-format.js",
-    "test": "karma start"
+    "jshint": "jshint --reporter=./node_modules/jshint-stylish angular-moment-duration-format.js",
+    "uglify": "uglifyjs angular-moment-duration-format.js -m --source-map -o angular-moment-duration-format.min.js",
+    "test": "npm run jshint && karma start",
+    "build": "npm run jshint && npm run uglify"
   },
   "peerDependencies": {
     "angular": ">=1.2.0 <1.8.0",

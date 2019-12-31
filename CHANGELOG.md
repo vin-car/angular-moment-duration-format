@@ -1,3 +1,7 @@
+## 0.2.1
+
+Minor fix to npm scripts
+
 ## 0.2.0
 
 Changes included with this version:
